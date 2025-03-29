@@ -1,10 +1,10 @@
 def find_cube_pairs(target) :  #a colon is required to define the function
     solutions = []   ##no semicolon required
-    max_num = round(target * (1/3))   #one asterisk required for multiplication and not 3,parameter is called target and not targ
+    max_num = round(target ** (1/3))   #two asterisk required for exponentiation and not 3,parameter is called target and not targ
 
     for a in range(1, max_num + 1):   #it should be range and not ranges,also colon expected after for statement
         for b in range(a, max_num + 1):      #colon expected after for statement,it should be range and not ranges
-            if a*3 + b*3 == target:         #colon expected after if statement,only one * required for multiplication and not three,parameter is called target and not targ
+            if a**3 + b**3 == target:         #colon expected after if statement,only two * required for exponentiation and not three,parameter is called target and not targ
                 solutions.append((a, b))       #no semi-colon required,string name is solutions and not sol
     return solutions
 
